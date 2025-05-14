@@ -88,7 +88,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #25252b;
+  background-size:cover;
+        background-repeat:no-repeat;
+        background-image: url('../assets/bg.jpg');
 }
 
 * {

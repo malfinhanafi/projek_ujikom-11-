@@ -88,7 +88,9 @@ body {
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  background: #25252b;
+  background-size:cover;
+        background-repeat:no-repeat;
+        background-image: url('../assets/bg.jpg');
 }
 
 * {
@@ -145,7 +147,7 @@ rgb(255, 174, 69) 5%,
     transparent 40%,
 rgb(255, 69, 178) 50%
   );
-  filter: drop-shadow(0 15px 50px #000);
+  filter: drop-shadow(0 15px 50px #000);  
   border-radius: 20px;
   animation: rotating 4s linear infinite;
   animation-delay: -1s;

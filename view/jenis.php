@@ -14,7 +14,7 @@
     <body>
 </nav>
     <h1 class="mt-3">Data Jenis Tiket</h1>
-    <table class="table table-bordered table table-striped mt-3" >  
+    <table class="table table-borderless" >  
         <tr class="table-primary">
             <th>No</th>
             <th>ID Jenis</th>

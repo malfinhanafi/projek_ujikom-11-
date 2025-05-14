@@ -40,11 +40,7 @@ $jumlahtransaksi = mysqli_num_rows($querytransaksi);
         background-color: #45f3ff ;
         border-radius:10px;
     }
-    body{
-        background-size:cover;
-        background-repeat:no-repeat;
-        
-    }
+
 .user{
     position: fixed;
     top: 100px;

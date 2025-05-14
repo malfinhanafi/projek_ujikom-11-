@@ -17,7 +17,7 @@
 </nav>
     <h1>Data Tiket</h1>
     <a href="tambah_tiket.php" class="btn btn-primary mb-3 "><i class="fa-solid fa-plus"></i> Tambah Tiket</a>
-    <table class="table table bordered table table-striped">
+    <table class="table table-borderless">
         <tr class="table-primary">
             <th >No</th>
             <th>ID Tiket</th>

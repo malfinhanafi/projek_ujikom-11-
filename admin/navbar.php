@@ -45,6 +45,9 @@ body {
   justify-content: center;
   align-items: center;
   background: hsl(0, 0.00%, 100.00%);
+     background-size:cover;
+        background-repeat:no-repeat;
+        background-image: url('../assets/bg.jpg');
 }
 
 ul {
@@ -58,7 +61,7 @@ ul {
   width: 100%;
   padding: 10px;
   z-index: 100;
-  background:rgb(45, 84, 161);
+   background-color: #B1D4F2;
 }
 
 .link {

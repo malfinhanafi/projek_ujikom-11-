@@ -1,0 +1,81 @@
+
+
+CREATE TABLE Pembeli 
+(
+id_pembeli int PRIMARY KEY,
+username varchar(30),
+password varchar (255)
+)
+
+INSERT INTO pembeli VALUES 
+(1,"alfinhanafi","$2a$12$uYXXNrJeAXtRF.vRRSBjl.pGlmOALaCBAJV0crAyih7OIiqnQOBba")
+
+password : alfin
+
+CREATE TABLE tiket
+(
+id_tiket	int  PRIMARY KEY,
+id_admin int,
+nama_tiket varchar(20),	
+harga varchar(30)
+)
+
+INSERT INTO tiket VALUES 
+
+(2112,1,"FEST77","Rp.179.000 "),
+(2113,1,"FEST77","Rp.179.000 "),
+(2114,1,"FEST77","Rp.179.000 "),
+(2115,1,"FEST77","Rp.179.000 "),
+(2116,1,"FEST77","Rp.179.000 ");
+
+CREATE TABLE jenis_tiket
+(
+id_jenistiket	int PRIMARY KEY,
+nama_jenis (30) 
+
+)
+
+INSERT INTO tiket VALUES 
+(5505,"ELFESTS2"),
+(5506,"ELFESTS2"),
+(5507,"ELFESTS2"),
+(5508,"ELFESTS2"),
+(5509,"ELFESTS2")
+
+
+CREATE TABLE admin
+(
+id_admin	int PRIMARY KEY,
+username varchar(50) 
+password varchar(255)
+)
+
+INSERT INTO adminn VALUES 
+
+(1,"username","$2a$12$LGgxOxT9o8mz3uIN6IKeKuxcoG7/xKDyd66T4AbjFUEwRIwKIfsku")
+KATA SANDI ADMIN:admin1
+
+CREATE TABLE transaksi
+
+(
+no_rekening varchar(50) PRIMARY KEY,
+id_tiket int,
+id_pembeli int,
+id_admin int,
+nama_bank varchar(50),
+alamat text
+)
+
+INSERT INTO transaksi VALUES 
+(123-456-7890,2112,2,1,"DANA","Katapang"),
+(0123-01-000123-53-9,2113,2,1,"DANA","Katapang"),
+(132-00-1234567-8,2114,2,1,"Mandiri","Margahayu"),
+( 0123456789,2115,2,1,"BRI","Rancaekek"),
+(800123456789,2116,2,1,"BCA","Sukamenak")
+
+
+ALTER TABLE pesanan ADD FOREIGN KEY (id_pembeli) REFERENCES pembeli (id_pembeli)
+ON DELETE CASCADE
+ON UPDATE CASCADE
+
+
